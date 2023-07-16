@@ -1,0 +1,122 @@
+{%extends 'base.html'%}
+{% load static %}
+{%block body%}
+    <!--Start content Section (Camera)-->
+    <section class="camera-view">
+        <div class="container">
+            <div class="row">
+              <!--Start col one contain sidebar and main camera view-->
+                <div class="col-12">
+                    <div class="card mb-3">
+                        <div class="row">
+                        <!--Start Sidebar-->
+                          <div class="col-lg-3 col-md-4">
+                            <div class="card-body">  
+                              <div class="sidebar square_btn ifconnected mb-3">
+                                <a href="#" >
+                                  <i class="fas fa-battery-half" style=" transform: rotate(-90deg);"></i>
+                                  <span>Robot Battery</span>
+                                  <span id='batt'></span> 
+                                </a>
+                              </div><!--end sidebar1 div-->
+                              <div class="sidebar square_btn  ifconnected mb-3">
+                                <a href="#" >
+                                  <i class="fas fa-thermometer-three-quarters"></i>
+                                  <span>Robot Temprature</span>
+                                  <span id='temp'></span>
+                                </a>
+                              </div><!--end sidebar2 div-->
+                              <div class="sidebar square_btn ifconnected mb-3">
+                                <a href="#">
+                                  <i class="fas fa-stopwatch"></i>
+                                  <span>Robot Pressure</span>
+                                  <span id='per'> Bar</span>
+                                </a>
+                              </div><!--end sidebar3 div-->
+                              <div id='robotcon' class="ifconnected">
+                              <div class="sidebar square_btn  mb-3">
+                                <a href="#">
+                                  <i class="fas fa-wifi"></i>
+                                  <span>Robot Connection</span>
+                                  <span id='con'></span>
+                                </a>
+                              </div><!--end sidebar3 div-->
+                            </div>
+                            <div class="sidebar square_btn ifconnected mb-3">
+                              <a href="#">
+                                <i class="fas fa-battery-half" style=" transform: rotate(-90deg);"></i>
+                                <span>Remote Battary</span>
+                                <span id='bat-rem'></span>
+                              </a>
+                            </div><!--end sidebar3 div-->  
+                            <div id='remotecon' class="ifconnected">
+                              <div class="sidebar square_btn mb-3">
+                                <a href="#">
+                                  <i class="fas fa-wifi"></i>
+                                  <span>Remote Connection</span>
+                                  <span id='con-rem'></span>
+                                </a>
+                              </div><!--end sidebar3 div-->
+                            </div><!--end id div remotecon div-->
+                            </div><!--end card-body card div-->
+                          </div><!--end col-md-5 card div-->
+                        <!--Start Sidebar-->
+                        <!--Start Camera video-->
+                          <div class="col-lg-9 col-md-8">
+                            <div class="card-body">
+                             <div class="ratio ratio-16x9">
+
+                                <img id="changeMe"  class="img-fluid img-thumbnail mx-auto d-block" src="{%url 'webcam_feed_0'%}" alt="main webcam">                                <!-- <img  id='mainnImg' class="img-fluid img-thumbnail mx-auto d-block" src="{%url 'webcam_feed_0'%}" alt="..."> -->
+                              </div><!--end ratio ratio-16x9 div-->
+                            </div><!--end card-body card div-->
+                          </div><!--end col-md-6 card div-->
+                          <!--End Camera video-->
+                        </div><!--end row one inside card div-->
+                        <div class="camera-view-thumbnail">
+                          <div class="row">
+
+                              <div class="col">
+                                <div class="ratio ratio-16x9">
+
+                                  <img class="img-fluid img-thumbnail mx-auto d-block img" src="{%url 'webcam_feed_0'%}" alt="_feed_1">
+                                </div><!--end ratio ratio-16x9 div-->
+                              </div><!--end col-md-2 one div-->
+                              <div class="col">
+                                <div class="ratio ratio-16x9">
+
+                                   <img   class="img-fluid img-thumbnail mx-auto d-block img" src="{%url 'webcam_feed_1'%}" alt="_feed_2">
+                                </div><!--end ratio ratio-16x9 div-->
+                              </div><!--end col-md-2 one div-->
+                              <div class="col">
+                                <div class="ratio ratio-16x9">
+
+                                   <img  class="img-fluid img-thumbnail mx-auto d-block img" src="{%url 'webcam_feed_2'%}" alt="_feed_3">
+                                </div><!--end ratio ratio-16x9 div-->
+                              </div><!--end col-md-2 one div-->
+                              
+                              <div class="col">
+                                <div class="ratio ratio-16x9">
+
+                                   <img  class="img-fluid img-thumbnail mx-auto d-block img" src="{%url 'webcam_feed_3'%}" alt="_feed_4">
+                                </div><!--end ratio ratio-16x9 div-->
+                              </div>
+                              
+                              <div class="col">
+                                <div class="ratio ratio-16x9">
+
+                                   <img  class="img-fluid img-thumbnail mx-auto d-block img" src="{%url 'webcam_feed_4'%}" alt="_feed_5">
+                                </div><!--end ratio ratio-16x9 div-->
+                              </div>
+                              
+
+                            </div><!--end row2 inside c card div--->
+                        </div><!--end amera-view-thumbnail div-->
+                      </div><!--end card div-->
+                </div><!--end col-12 (col-one)div-->
+              <!--Start col one contain camera view thumbnail-->
+            </div><!--end row one div-->
+        </div><!--End container div-->
+    </section><!--End Camera Section-->
+    <!--End content Section (Camera)-->
+    {%endblock %}
+

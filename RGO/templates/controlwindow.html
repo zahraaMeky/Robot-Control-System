@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome CSS -->
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <!-- fonts CSS -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- hover effect CSS -->
+    <link href="assets/css/hover-min.css" rel="stylesheet">
+     <!-- circular-slider CSS -->
+     <link href="assets/css/circular-slider.min.css" rel="stylesheet">
+    <!-- stylesheet CSS -->
+    <link href="assets/css/stylesheet.css" rel="stylesheet">
+    <!--favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon-control.png">
+    <title>Control Window</title>
+  </head>
+  <body>
+    <!--Start Navigation Section-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand text-uppercase" href="index.html">
+            <img src="assets/img/brand.png" alt=" Rebot Control System" width="24" height="24" class="d-inline-block align-text-top">
+            Rebot Control System
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active hvr-underline-reveal" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  hvr-underline-reveal" href="controlwindow.html">Control</a>
+              </li>
+            </ul>
+            <span class="navbar-text text-uppercase">
+                <a href="https://www.ev-center.com/">Engineering Village</a>
+                <img src="assets/img/EV-logo.png" class="img-fluid" alt=" Rebot Control System">
+              </span>
+          </div>
+        </div>
+      </nav>
+    <!--End Navigation Section-->
+
+    <!--Start content Section (Camera)-->
+    <section class="camera-view">
+        <div class="container">
+            <div class="row">
+              <!--Start col one contain sidebar and main camera view-->
+                <div class="col-12">
+                    <div class="card mb-3">
+                      <!--Start display on meduim and large extra large screen only and hide on small and extra small-->
+                      <div  class="control-display d-xxl-block d-lg-block d-md-block  d-none d-sm-none">
+                        <div class="row">
+                        <!--Start Sidebar-->
+                          <div class="col">
+                            <div class="card-body">
+                                <div class="ratio ratio-16x9">
+                                   <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                 </div><!--end ratio ratio-16x9 div-->
+                            </div><!--end card-body one card div-->
+                            <div class="card-body">
+                                <div class="ratio ratio-16x9">
+                                   <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                 </div><!--end ratio ratio-16x9 div-->
+                            </div><!--end card-body two card div-->
+                          </div><!--end col-lg-3 col-md-4 card div-->
+                        <!--Start Sidebar-->
+                        <!--Start Camera video-->
+                          <div class="col-6">
+                            <div class="card-body">
+                                <ul class="list-group list-group-horizontal text-center mb-2">
+                                    <li class="list-group-item square_btn">
+                                        <a href="#" >
+                                            <i class="fas fa-battery-half" style=" transform: rotate(-90deg);"></i>
+                                            <span>Battery</span>
+                                            <span>12 V</span> 
+                                          </a>
+                                    </li>
+                                    <li class="list-group-item square_btn">  
+                                        <a href="#" >
+                                        <i class="fas fa-thermometer-three-quarters"></i>
+                                        <span>Temprature</span>
+                                        <span>30 C</span>
+                                      </a>
+                                    </li>
+                                    <li class="list-group-item square_btn">
+                                        <a href="#">
+                                            <i class="fas fa-stopwatch"></i>
+                                            <span>Bressure</span>
+                                            <span>10 Bar</span>
+                                          </a>
+                                    </li>
+                                    <li class="list-group-item square_btn">
+                                        <a href="#">
+                                            <i class="fas fa-wifi"></i>
+                                            <span>Connection</span>
+                                            <span>connected</span>
+                                          </a>
+                                    </li>
+                                </ul>
+                                 <div class="ratio ratio-16x9">
+                                     <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                </div><!--end ratio ratio-16x9 div-->
+                            </div><!--end card-body card div-->
+                          </div><!--end col-lg-9 col-md-8 card div-->
+                          <div class="col">
+                            <div class="card-body">
+                                <div class="ratio ratio-16x9">
+                                   <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                 </div><!--end ratio ratio-16x9 div-->
+                               </div><!--end card-body one card div-->
+                               <div class="card-body">
+                                <div class="ratio ratio-16x9">
+                                   <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                 </div><!--end ratio ratio-16x9 div-->
+                            </div><!--end card-body two card div-->
+                          </div><!--end col-lg-3 col-md-4 card div-->
+                          <!--End Camera video-->
+                        </div><!--end row one inside card div-->
+                      </div><!--control-display d-md-block d-lg-block d-none d-sm-none-->
+                      <!--End display on meduim and large extra large screen only and hide on small and extra small-->
+                      
+                      <!--Start display on m small screen only and hide on meduim and large extra large extra small-->
+                      <div  class="control-display d-xl-none d-lg-no d-md-none ne d-none d-sm-block">
+                        <div class="row">
+                        <!--Start Sidebar-->
+                          <div class="col-3">
+                            <div class="card-body">
+                                <div class="ratio ratio-16x9">
+                                   <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                 </div><!--end ratio ratio-16x9 div-->
+                            </div><!--end card-body one card div-->
+                            <div class="card-body">
+                              <div class="ratio ratio-16x9">
+                                 <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                               </div><!--end ratio ratio-16x9 div-->
+                          </div><!--end card-body one card div-->
+                          <div class="card-body">
+                            <div class="ratio ratio-16x9">
+                               <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                             </div><!--end ratio ratio-16x9 div-->
+                        </div><!--end card-body one card div-->
+                            <div class="card-body">
+                                <div class="ratio ratio-16x9">
+                                   <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                 </div><!--end ratio ratio-16x9 div-->
+                            </div><!--end card-body two card div-->
+                          </div><!--end col-lg-3 col-md-4 card div-->
+                        <!--Start Sidebar-->
+                        <!--Start Camera video-->
+                          <div class="col-9">
+                            <div class="card-body">
+                                <ul class="list-group list-group-horizontal text-center mb-2">
+                                    <li class="list-group-item square_btn">
+                                        <a href="#" >
+                                            <i class="fas fa-battery-half" style=" transform: rotate(-90deg);"></i>
+                                            <span>Battery</span>
+                                            <span>12 V</span> 
+                                          </a>
+                                    </li>
+                                    <li class="list-group-item square_btn">  
+                                        <a href="#" >
+                                        <i class="fas fa-thermometer-three-quarters"></i>
+                                        <span>Temprature</span>
+                                        <span>30 C</span>
+                                      </a>
+                                    </li>
+                                    <li class="list-group-item square_btn">
+                                        <a href="#">
+                                            <i class="fas fa-stopwatch"></i>
+                                            <span>Bressure</span>
+                                            <span>10 Bar</span>
+                                          </a>
+                                    </li>
+                                    <li class="list-group-item square_btn">
+                                        <a href="#">
+                                            <i class="fas fa-wifi"></i>
+                                            <span>Connection</span>
+                                            <span>connected</span>
+                                          </a>
+                                    </li>
+                                </ul>
+                                 <div class="ratio ratio-16x9">
+                                     <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                </div><!--end ratio ratio-16x9 div-->
+                            </div><!--end card-body card div-->
+                          </div><!--end col-lg-9 col-md-8 card div-->
+                          <!--End Camera video-->
+                        </div><!--end row one inside card div-->
+                      </div><!--control-display d-md-none d-lg-none d-xl-none d-none d-sm-block-->
+                      <!--End display on m small screen only and hide on meduim and large extra large extra small-->
+                      <!--Start display on m small screen only and hide on meduim and large extra large extra small-->
+                      <div  class="control-display  d-xl-none d-lg-none d-md-none d-sm-none d-block">
+                        <div class="row">
+                           <!--Start Camera video-->
+                           <div class="col-12">
+                            <div class="card-body">
+                                <ul class="list-group list-group-horizontal text-center mb-2">
+                                    <li class="list-group-item square_btn">
+                                        <a href="#" >
+                                            <i class="fas fa-battery-half" style=" transform: rotate(-90deg);"></i>
+                                            <span>Battery</span>
+                                            <span>12 V</span> 
+                                          </a>
+                                    </li>
+                                    <li class="list-group-item square_btn">  
+                                        <a href="#" >
+                                        <i class="fas fa-thermometer-three-quarters"></i>
+                                        <span>Temprature</span>
+                                        <span>30 C</span>
+                                      </a>
+                                    </li>
+                                    <li class="list-group-item square_btn">
+                                        <a href="#">
+                                            <i class="fas fa-stopwatch"></i>
+                                            <span>Bressure</span>
+                                            <span>10 Bar</span>
+                                          </a>
+                                    </li>
+                                    <li class="list-group-item square_btn">
+                                        <a href="#">
+                                            <i class="fas fa-wifi"></i>
+                                            <span>Connection</span>
+                                            <span>connected</span>
+                                          </a>
+                                    </li>
+                                </ul>
+                                 <div class="ratio ratio-16x9">
+                                     <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                </div><!--end ratio ratio-16x9 div-->
+                            </div><!--end card-body card div-->
+                          </div><!--end col-lg-9 col-md-8 card div-->
+                          <!--End Camera video-->
+                        <!--Start Sidebar-->
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col">
+                                <div class="card-body">
+                                  <div class="ratio ratio-16x9">
+                                     <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                   </div><!--end ratio ratio-16x9 div-->
+                              </div><!--end card-body one card div-->
+                              </div><!--end col-->
+                              <div class="col">
+                                <div class="card-body">
+                                  <div class="ratio ratio-16x9">
+                                     <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                   </div><!--end ratio ratio-16x9 div-->
+                              </div><!--end card-body one card div-->
+                              </div><!--end col-->
+                              <div class="col">
+                                <div class="card-body">
+                                  <div class="ratio ratio-16x9">
+                                     <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                   </div><!--end ratio ratio-16x9 div-->
+                              </div><!--end card-body one card div-->
+                              </div><!--end col-->
+                              <div class="col">
+                                <div class="card-body">
+                                  <div class="ratio ratio-16x9">
+                                     <img  class="img-fluid img-thumbnail mx-auto d-block" src="assets/img/car0.jpg" alt="...">
+                                   </div><!--end ratio ratio-16x9 div-->
+                              </div><!--end card-body one card div-->
+                              </div><!--end col-->
+                            </div><!--row inside col-12-->
+                          </div><!--end col-lg-12 card div-->
+                        <!--End Sidebar-->          
+                        </div><!--end row one inside card div-->
+                      </div><!--control-display d-md-none d-lg-none d-xl-none d-none d-sm-block-->
+                      <!--End display on m small screen only and hide on meduim and large extra large extra small-->
+
+                      <!--start Remote control -->
+                        <div class="remote-control my-3">
+                          <div class="heading mb-5">
+                            <h3 class="text-center p-3">WEAPONS SYSTEM</h3>
+                          </div>
+                          <div class="row">
+                            <div  class="col-md">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="d-flex justify-content-center">
+                                    <div class="one">
+                                      <div class="btn-container mb-4">
+                                        <a href="#" class="btn-circle">1</a>
+                                      </div>
+                                      <div class="btn-container">
+                                        <a href="#" class="btn-circle">3</a>
+                                    </div>
+                                    </div><!--one-->
+                                    <div class="two">
+                                      <div class="btn-container mb-4">
+                                        <a href="#" class="btn-circle">2</a>
+                                      </div>
+                                      <div class="btn-container">
+                                        <a href="#" class="btn-circle">4</a>
+                                    </div>
+                                    </div><!--two-->      
+                                  </div><!--d-flex one-->
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                  <div class="image-container">
+                                    <img  class="img-fluid" src="assets/img/rec-btn-background.png" alt="...">
+                                    <button type="button" class="btn btn-light drive text-uppercase">Drive</button>
+                                    <button type="button" class="btn btn-light brake text-uppercase">Brake</button>
+                                  </div><!--image container-->
+                                </div>
+                              </div><!--row-->
+                              <div class="row">
+                                <div  class="col-12 d-flex justify-content-center">
+                                  <div id="slider-1"></div>
+                                 </div><!--end col div-->
+                              </div><!--row-->
+                              <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                  <div class="image-container">
+                                    <img  class="img-fluid" src="assets/img/rec-btn-background.png" alt="...">
+                                    <button type="button" class="btn btn-light ptz text-uppercase">PTZ</button>
+                                    <button type="button" class="btn btn-light mouse text-uppercase">mouse</button>
+                                  </div><!--image container-->
+                                </div>
+                              </div><!--row-->
+                            </div><!--end col div-->
+                            <div  class="col-md-6">
+                              <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                  <div class="image-container change-circle rebot">
+                                    <img  class="img-fluid" src="assets/img/rebot.png" alt="Rebot">
+                                    <button type="button" class="btn-circle btn-middle-arm-top">
+                                      <i class="fas fa-arrow-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-circle btn-middle-arm-bottom">
+                                      <i class="fas fa-arrow-down"></i>
+                                    </button>
+                                    <button type="button" class="btn-circle btn-arm-top">
+                                      <i class="fas fa-arrow-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-circle btn-arm-bottom">
+                                      <i class="fas fa-arrow-down"></i>
+                                    </button>
+                                    <button type="button" class="btn-circle btn-hand-top">
+                                      <i class="fas fa-arrow-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-circle btn-hand-bottom">
+                                      <i class="fas fa-arrow-down"></i>
+                                    </button>
+                                    <button type="button" class="btn-circle btn-body-top">
+                                      <i class="fas fa-arrow-up"></i>
+                                    </button>
+                                    <button type="button" class="btn-circle btn-body-bottom">
+                                      <i class="fas fa-arrow-down"></i>
+                                    </button>
+                                    <button type="button" class="btn-circle btn-ring-top">
+                                      <i class="fas fa-redo"></i>
+                                    </button>
+                                    <button type="button" class="btn-circle btn-ring-bottom">
+                                       <i class="fas fa-undo"></i>
+                                    </button>
+                                  </div><!--image container-->
+                                </div>
+                              </div><!--row-->
+                              <div class="row">
+                                <div class="col-12 d-flex justify-content-start">
+                                  <div class="image-container second-change-circle-btn margin-left-pos margin-top-minus">
+                                    <img  class="img-fluid" src="assets/img/circ-background.png" alt="...">
+                                    <button type="button" class="btn-circle tortoise-btn">
+                                     <img  src="assets/img/tortoise-btn.png" alt="...">
+                                    </button>
+                                    <button type="button" class="btn-circle rabbit-btn">
+                                      <img  class="img-fluid" src="assets/img/rabbit-btn.png" alt="...">
+                                    </button>
+                                  </div><!--image container-->
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 d-flex justify-content-start">
+                                  <div class="image-container third-change-circle-btn margin-left-pos pull-top">
+                                    <img  class="img-fluid" src="assets/img/rectangle-mouse-background.png" alt="...">
+                                    <button type="button" class="btn-circle mouse-1-btn">
+                                     <img  src="assets/img/mouse1-btn.png" alt="...">
+                                    </button>
+                                    <button type="button" class="btn-circle mouse-2-btn">
+                                      <img  class="img-fluid" src="assets/img/mouse2-btn.png" alt="...">
+                                    </button>
+                                  </div><!--image container-->
+                                </div>
+                              </div>
+                            </div><!--end col div-->
+                            <div  class="col-md">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="d-flex justify-content-center">
+                                    <div class="one">
+                                      <div class="btn-container mb-4">
+                                        <a href="#" class="btn-circle">
+                                          <i class="fas fa-power-off"></i>
+                                        </a>
+                                      </div>
+                                    </div><!--one-->
+                                    <div class="two">
+                                      <div class="btn-container mb-4">
+                                        <a href="#" class="btn-circle">
+                                          <i class="fas fa-bug"></i>
+                                        </a>
+                                      </div>
+                                      <div class="btn-container">
+                                        <a href="#" class="btn-circle text-uppercase">
+                                          <i class="fas fa-fire" style="color: #F6931E;"></i>
+                                        </a>
+                                    </div>
+                                    </div><!--two-->      
+                                  </div><!--d-flex one-->
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                  <div class="image-container">
+                                    <img  class="img-fluid" src="assets/img/rec-open-btn-background.png" alt="...">
+                                    <button type="button" class="btn btn-light open">Open</button>
+                                    <button type="button" class="btn btn-light close">Close</button>
+                                  </div><!--image container-->
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div  class="col-12 d-flex justify-content-center">
+                                  <div id="slider-2"></div>
+                                 </div><!--end col div-->
+                              </div><!--row-->
+                              <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                  <div class="image-container">
+                                    <img  class="img-fluid" src="assets/img/rec-open-btn-background.png" alt="...">
+                                    <button type="button" class="btn btn-light mute">
+                                      <img  class="img-fluid" src="assets/img/mute-btn.png" alt="...">
+                                    </button>
+                                    <button type="button" class="btn btn-light mic">
+                                      <img  class="img-fluid" src="assets/img/mic-btn.png" alt="...">
+                                    </button>
+                                  </div><!--image container-->
+                                </div>
+                              </div>
+                            </div><!--end col div-->
+                          </div><!--end row1 inside remote div--->
+                        </div><!--end remote-control div-->
+                      </div><!--end card div-->
+                </div><!--end col-12 (col-one)div-->
+            </div><!--end row one div-->
+        </div><!--End container div-->
+    </section><!--End Camera Section-->
+    <!--End content Section (Camera)-->
+
+
+    <!--Script-->
+    <!-- jquery  -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script> 
+    <!-- fontawesome -->
+    <script src="assets/js/all.min.js"></script>
+    <!-- nicescroll -->
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+     <!-- circular-slider  -->
+     <script src="assets/js/circular-slider.min.js"></script>
+    <!-- main -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

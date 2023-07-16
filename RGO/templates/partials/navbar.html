@@ -1,0 +1,28 @@
+{% load static %}
+    <!--Start Navigation Section-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand text-uppercase" href="index.html">
+            <img src="{% static 'assets/img/brand.png'%}" alt=" Rebot Control System" width="24" height="24" class="d-inline-block align-text-top">
+            Rebot Control System
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active hvr-underline-reveal" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  hvr-underline-reveal" href="controlwindow.html">Control</a>
+              </li>
+            </ul>
+            <span class="navbar-text text-uppercase">
+                <a href="https://www.ev-center.com/">Engineering Village</a>
+                <img src="{% static 'assets/img/EV-logo.png'%}" class="img-fluid" alt=" Rebot Control System">
+              </span>
+          </div>
+        </div>
+    </nav>
+    <!--End Navigation Section-->
